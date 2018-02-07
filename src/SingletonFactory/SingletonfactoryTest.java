@@ -7,8 +7,9 @@ public class SingletonfactoryTest {
                 BarProducer t3 = new BarProducer(3);
 		t1.start();
 		t2.start();
-//                t1.interrupt();
-//		t2.interrupt();
+                t1.interrupt();
+		t2.interrupt();
                 t3.start();
+                t3.interrupt();
 	}
 }
